@@ -37,4 +37,9 @@
         android:name="ru.mirea.jukov.mireaproject.ui.webView.WebViewFragment"
         android:label="Web View"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="ru.mirea.jukov.mireaproject.ui.mediaPlayer.musicFragment"
+        android:label="Music Player"
+        tools:layout="@layout/fragment_music" />
 </navigation>

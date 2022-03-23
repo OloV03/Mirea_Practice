@@ -52,20 +52,6 @@ public class WebViewFragment extends Fragment {
         webView.loadUrl("https://metanit.com");
     }
 
-    public void clickHome(View view){
-        WebView webView = view.findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("https://metanit.com");
-    }
-
-    public void clickFind(View view){
-        WebView webView = view.findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
-        EditText editText = view.findViewById(R.id.urlEdit);
-
-        webView.loadUrl(editText.getText().toString());
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -1,5 +1,6 @@
 package ru.mirea.jukov.mireaproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -119,15 +120,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickHome(View view){
         WebView webView = findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://metanit.com");
     }
 
     public void clickFind(View view){
         WebView webView = findViewById(R.id.webView);
-        webView.getSettings().setJavaScriptEnabled(true);
         EditText editText = findViewById(R.id.urlEdit);
 
         webView.loadUrl(editText.getText().toString());
+    }
+
+    public void onClickPlayMusic(View view) {
+        startService(
+                new Intent(MainActivity.this, PlayerService.class));
+    }
+    public void onClickStopMusic(View view) {
+        stopService(
+                new Intent(MainActivity.this, PlayerService.class));
     }
 }

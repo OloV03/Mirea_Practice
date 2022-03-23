@@ -28,5 +28,9 @@
             android:id="@+id/webViewFragment"
             android:icon="@drawable/ic_launcher_foreground"
             android:title="WebView" />
+        <item
+            android:id="@+id/musicFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Music" />
     </group>
 </menu>
