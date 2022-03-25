@@ -21,10 +21,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SensorManager sensorManager =
-                (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+
+        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager
                 .getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener(this, accelerometerSensor,
+                SensorManager.SENSOR_DELAY_NORMAL);
+
         azimuthTextView = findViewById(R.id.textViewAzimuth);
         pitchTextView = findViewById(R.id.textViewPitch);
         rollTextView = findViewById(R.id.textViewRoll);
@@ -46,9 +49,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float valueAzimuth = event.values[0];
             float valuePitch = event.values[1];
             float valueRoll = event.values[2];
-            azimuthTextView.setText("Azimuth: " + valueAzimuth);
-            pitchTextView.setText("Pitch: " + valuePitch);
-            rollTextView.setText("Roll: " + valueRoll);
+            azimuthTextView.setText(String.valueOf(valueAzimuth));
+            pitchTextView.setText(String.valueOf(valuePitch));
+            rollTextView.setText(String.valueOf(valueRoll));
         }
     }
     @Override
