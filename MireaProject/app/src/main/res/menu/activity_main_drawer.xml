@@ -26,11 +26,15 @@
             android:title="Calculate" />
         <item
             android:id="@+id/webViewFragment"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="WebView" />
         <item
             android:id="@+id/musicFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Music" />
+        <item
+            android:id="@+id/hardwareFragment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Hardware" />
     </group>
 </menu>

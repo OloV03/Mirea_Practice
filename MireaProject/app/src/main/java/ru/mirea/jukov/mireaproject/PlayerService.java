@@ -31,6 +31,4 @@ public class PlayerService extends Service {
     public void onDestroy() {
         mediaPlayer.stop();
     }
-
-
 }

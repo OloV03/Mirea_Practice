@@ -42,4 +42,9 @@
         android:name="ru.mirea.jukov.mireaproject.ui.mediaPlayer.musicFragment"
         android:label="Music Player"
         tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/hardwareFragment"
+        android:name="ru.mirea.jukov.mireaproject.HardwareFragment"
+        android:label="fragment_hardware"
+        tools:layout="@layout/fragment_hardware" />
 </navigation>

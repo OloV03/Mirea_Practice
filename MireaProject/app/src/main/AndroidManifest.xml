@@ -3,6 +3,10 @@
     package="ru.mirea.jukov.mireaproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,9 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MireaProject">
         <service
-            android:name=".PlayerService"
+            android:name=".HardwareService"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".PlayerService"
+            android:enabled="true"
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
