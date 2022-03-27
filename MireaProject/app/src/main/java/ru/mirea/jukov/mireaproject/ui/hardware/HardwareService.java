@@ -1,4 +1,4 @@
-package ru.mirea.jukov.mireaproject;
+package ru.mirea.jukov.mireaproject.ui.hardware;
 
 import android.app.Service;
 import android.content.Intent;

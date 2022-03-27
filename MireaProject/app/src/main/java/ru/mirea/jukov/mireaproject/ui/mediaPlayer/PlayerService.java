@@ -1,10 +1,12 @@
-package ru.mirea.jukov.mireaproject;
+package ru.mirea.jukov.mireaproject.ui.mediaPlayer;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.view.View;
+
+import ru.mirea.jukov.mireaproject.R;
 
 public class PlayerService extends Service {
     private MediaPlayer mediaPlayer;

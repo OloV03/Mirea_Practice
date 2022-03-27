@@ -1,6 +1,5 @@
 package ru.mirea.jukov.mireaproject.ui.mediaPlayer;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import ru.mirea.jukov.mireaproject.MainActivity;
-import ru.mirea.jukov.mireaproject.PlayerService;
 import ru.mirea.jukov.mireaproject.R;
 
 public class musicFragment extends Fragment {

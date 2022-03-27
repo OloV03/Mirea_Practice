@@ -36,5 +36,13 @@
             android:id="@+id/hardwareFragment"
             android:icon="@drawable/ic_launcher_foreground"
             android:title="Hardware" />
+        <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Settings" />
+        <item
+            android:id="@+id/storiesFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Stories" />
     </group>
 </menu>

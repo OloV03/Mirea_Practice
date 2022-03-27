@@ -1,4 +1,4 @@
-package ru.mirea.jukov.mireaproject;
+package ru.mirea.jukov.mireaproject.ui.hardware;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -40,6 +40,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+
+import ru.mirea.jukov.mireaproject.MainActivity;
+import ru.mirea.jukov.mireaproject.R;
 
 public class HardwareFragment extends Fragment implements View.OnClickListener{
 
