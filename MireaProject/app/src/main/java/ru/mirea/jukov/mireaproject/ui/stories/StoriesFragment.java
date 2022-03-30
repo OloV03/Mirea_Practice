@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ru.mirea.jukov.mireaproject.R;
-import ru.mirea.jukov.mireaproject.StoryView;
 
 public class StoriesFragment extends Fragment implements View.OnClickListener{
     private static final String ARG_PARAM1 = "param1";

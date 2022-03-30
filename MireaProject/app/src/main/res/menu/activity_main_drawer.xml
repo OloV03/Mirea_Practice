@@ -44,5 +44,9 @@
             android:id="@+id/storiesFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Stories" />
+        <item
+            android:id="@+id/webResFragment"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Moscow Info" />
     </group>
 </menu>

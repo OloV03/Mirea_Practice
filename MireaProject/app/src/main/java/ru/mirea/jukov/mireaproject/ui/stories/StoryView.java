@@ -1,4 +1,4 @@
-package ru.mirea.jukov.mireaproject;
+package ru.mirea.jukov.mireaproject.ui.stories;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import ru.mirea.jukov.mireaproject.MainActivity;
+import ru.mirea.jukov.mireaproject.R;
 import ru.mirea.jukov.mireaproject.ui.stories.App;
 import ru.mirea.jukov.mireaproject.ui.stories.AppDatabase;
 import ru.mirea.jukov.mireaproject.ui.stories.Item;
