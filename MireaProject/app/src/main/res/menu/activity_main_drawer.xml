@@ -48,5 +48,9 @@
             android:id="@+id/webResFragment"
             android:icon="@drawable/ic_menu_camera"
             android:title="Moscow Info" />
+        <item
+            android:id="@+id/notepadFragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Notepad" />
     </group>
 </menu>

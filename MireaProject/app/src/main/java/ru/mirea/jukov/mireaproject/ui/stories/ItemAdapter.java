@@ -24,7 +24,6 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
 
     @Override
     public ItemAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View view = inflater.inflate(R.layout.list_item, parent, false);
         return new ViewHolder(view);
     }
@@ -51,5 +50,4 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder>{
             wordStory = view.findViewById(R.id.wordStory);
         }
     }
-
 }

@@ -54,7 +54,6 @@ public class WebResFragment extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_web_res, container, false);
         timeView = view.findViewById(R.id.timeView);
-        weatherView = view.findViewById(R.id.weatherView);
 
         view.findViewById(R.id.btnUpdateInfo).setOnClickListener(this);
 

@@ -62,4 +62,9 @@
         android:name="ru.mirea.jukov.mireaproject.ui.webRes.WebResFragment"
         android:label="Info"
         tools:layout="@layout/fragment_web_res" />
+    <fragment
+        android:id="@+id/notepadFragment"
+        android:name="ru.mirea.jukov.mireaproject.ui.notepad.NotepadFragment"
+        android:label="Notepad"
+        tools:layout="@layout/fragment_notepad" />
 </navigation>
