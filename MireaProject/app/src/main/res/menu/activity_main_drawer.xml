@@ -22,35 +22,39 @@
             android:title="Brouser" />
         <item
             android:id="@+id/calculateFragment"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@android:drawable/ic_dialog_dialer"
             android:title="Calculate" />
         <item
             android:id="@+id/webViewFragment"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/common_google_signin_btn_icon_dark"
             android:title="WebView" />
         <item
             android:id="@+id/musicFragment"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_media_pause"
             android:title="Music" />
         <item
             android:id="@+id/hardwareFragment"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@android:drawable/ic_lock_idle_lock"
             android:title="Hardware" />
         <item
             android:id="@+id/settingsFragment"
-            android:icon="@drawable/ic_launcher_background"
+            android:icon="@android:drawable/ic_menu_manage"
             android:title="Settings" />
         <item
             android:id="@+id/storiesFragment"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_menu_agenda"
             android:title="Stories" />
         <item
             android:id="@+id/webResFragment"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@android:drawable/ic_dialog_info"
             android:title="Moscow Info" />
         <item
             android:id="@+id/notepadFragment"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@android:drawable/ic_menu_edit"
             android:title="Notepad" />
+        <item
+            android:id="@+id/mapsFragment"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Google Map" />
     </group>
 </menu>

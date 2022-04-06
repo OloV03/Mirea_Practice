@@ -1,6 +1,9 @@
 package ru.mirea.jukov.mireaproject;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -10,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
@@ -29,9 +33,22 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     public static FragmentManager manager;
 
+    private static final int REQUEST_CODE_PERMISSION = 100;
+    private final String[] PERMISSIONS =
+            {
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+            };
+
+    private boolean isWork;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        isWork = hasPermissions(this, PERMISSIONS);
+
+        if (!isWork) { ActivityCompat.requestPermissions(this, PERMISSIONS, REQUEST_CODE_PERMISSION); }
 
         manager = getSupportFragmentManager();
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -47,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
+                R.id.calculateFragment)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -80,6 +97,18 @@ public class MainActivity extends AppCompatActivity {
         curText += but.getText().toString();
 
         textView.setText(curText);
+    }
+
+    public static boolean hasPermissions(Context context, String... permissions){
+        if (context != null && permissions != null){
+            for (String permission: permissions){
+                if (ActivityCompat.checkSelfPermission(context, permission)
+                        == PackageManager.PERMISSION_DENIED)
+                    return false;
+            }
+            return true;
+        }
+        return false;
     }
 
     private int firstNum = 0;
